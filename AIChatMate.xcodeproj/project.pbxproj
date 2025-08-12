@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6A99CFEE2E4B9B5F006418B7 /* SwiftfulUtilities in Frameworks */ = {isa = PBXBuildFile; productRef = 6A99CFED2E4B9B5F006418B7 /* SwiftfulUtilities */; };
+		6ABA47B92E46152700412801 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6ABA47B82E46152700412801 /* SDWebImageSwiftUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6AB29D072E44E8F9001A5E39 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ABA47B92E46152700412801 /* SDWebImageSwiftUI in Frameworks */,
+				6A99CFEE2E4B9B5F006418B7 /* SwiftfulUtilities in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +132,8 @@
 			);
 			name = AIChatMate;
 			packageProductDependencies = (
+				6ABA47B82E46152700412801 /* SDWebImageSwiftUI */,
+				6A99CFED2E4B9B5F006418B7 /* SwiftfulUtilities */,
 			);
 			productName = AIChatMate;
 			productReference = 6AB29CF62E44E8F5001A5E39 /* AIChatMate.app */;
@@ -208,6 +217,10 @@
 			);
 			mainGroup = 6AB29CED2E44E8F4001A5E39;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6ABA47B72E46152700412801 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				6A99CFEC2E4B9B5F006418B7 /* XCRemoteSwiftPackageReference "SwiftfulUtilities" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6AB29CF72E44E8F5001A5E39 /* Products */;
 			projectDirPath = "";
@@ -412,6 +425,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AIChatMate/Preview Content\"";
 				DEVELOPMENT_TEAM = PN63ZGUMDK;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AIChatMate/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "AI Chat";
@@ -450,6 +464,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AIChatMate/Preview Content\"";
 				DEVELOPMENT_TEAM = PN63ZGUMDK;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AIChatMate/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "AI Chat";
@@ -589,6 +604,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6A99CFEC2E4B9B5F006418B7 /* XCRemoteSwiftPackageReference "SwiftfulUtilities" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulUtilities";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.6;
+			};
+		};
+		6ABA47B72E46152700412801 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6A99CFED2E4B9B5F006418B7 /* SwiftfulUtilities */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A99CFEC2E4B9B5F006418B7 /* XCRemoteSwiftPackageReference "SwiftfulUtilities" */;
+			productName = SwiftfulUtilities;
+		};
+		6ABA47B82E46152700412801 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6ABA47B72E46152700412801 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6AB29CEE2E44E8F4001A5E39 /* Project object */;
 }
